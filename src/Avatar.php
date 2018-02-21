@@ -9,10 +9,10 @@ class Avatar
      * @param string $email The email
      * @return string The HTML code.
      */
-    public function image($email)
+    public function src($email)
     {
         $hash = $this->hashEmail($email);
-        return sprintf('<img src="%s">', $hash);
+        return sprintf('https://avatar.enta.net/avatar/%s', $hash);
     }
 
     /**
