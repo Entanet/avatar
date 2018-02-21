@@ -16,7 +16,7 @@
    },
    "autoload":{
       "psr-4":{
-         "Entanet\\Avatar\\":"src/",
+         "Entanet\\Avatar\\":"src/"
       }
    },
    "extra": {
