@@ -1,0 +1,33 @@
+{
+   "name":"Entanet/avatar",
+   "description":"Laravel 5 Avatar helper",
+   "homepage":"https://github.com/Entanet/avatar",
+   "license":"MIT",
+   "authors":[
+      {
+         "name":"Tomos Lloyd",
+         "email":"tomos.lloyd@enta.net",
+         "role":"Software Development Manager"
+      }
+   ],
+   "require":{
+      "php":">=5.4.0",
+      "illuminate/support":"~5.0"
+   },
+   "autoload":{
+      "psr-4":{
+         "Entanet\\Avatar\\":"src/",
+      }
+   },
+   "extra": {
+        "laravel": {
+            "providers": [
+                "Entanet\\Avatar\\AvatarServiceProvider"
+            ],
+            "aliases": {
+                "Avatar": "Entanet\\Avatar\\Facades\\Avatar"
+            }
+        }
+    },
+   "minimum-stability":"stable"
+}
